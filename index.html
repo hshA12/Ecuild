@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extended Euclidean Algorithm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" /> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="quiz-container fade-in">
+      <div class="text-center mb-4">
+        <h1 class="display-4 text-primary">
+          <i class="fas fa-brain lamb-icon goldColor"></i>
+          Extended Euclidean Algorithm
+        </h1>
+        <p class="lead text-muted">Test your knowledge with our comprehensive game!</p>
+      </div>
+
+      <div id="EuclideanContent">
+        <div class="score-display">
+          <input type="number" id="a" min="1" class="form-control mb-3" placeholder="Enter a" />
+          <input type="number" id="b" min="1" class="form-control mb-3" placeholder="Enter b" />
+          <button id="submitBtn" class="btn btn-primary">Submit</button>
+          <div id="alert">
+
+          </div>
+        </div>
+
+        <div id="ExtendedTable" class="containerTable">
+          <table class=" table-bordered">
+            <thead>
+              <tr>
+                <th>q</th>
+                <th>r<sub>1</sub></th>
+                <th>r<sub>2</sub></th>
+                <th>r</th>
+                <th>s<sub>1</sub></th>
+                <th>s<sub>2</sub></th>
+                <th>s</th>
+                <th>t<sub>1</sub></th>
+                <th>t<sub>2</sub></th>
+                <th>t</th>
+              </tr>
+            </thead>
+            <tbody id="resultTableBody">
+              <!-- Dynamic rows here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
